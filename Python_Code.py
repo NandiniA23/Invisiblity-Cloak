@@ -9,7 +9,7 @@ while True:
         #cv2.imshow("bb",bg1)
         hsv=cv2.cvtColor(bg1,cv2.COLOR_BGR2HSV)
         #cv2.imshow("INA",hsv)
-        lower=(20,105,22)
+        lower=(20,105,22)          # Since a green blanket was used the green colour was extracted.While any colour can be used
         higher=(105,255,157)
         mask=cv2.inRange(hsv,lower,higher)
         #cv2.imshow("Mask",mask)
